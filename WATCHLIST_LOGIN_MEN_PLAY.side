@@ -1,0 +1,85 @@
+{
+  "id": "29c35d6f-750a-4c6f-b9c4-3919028a53b5",
+  "version": "2.0",
+  "name": "WATCHLIST_LOGIN_MEN_PLAY",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "e3dad356-1d85-4985-a4f8-a818e8aec513",
+    "name": "PELI",
+    "commands": [{
+      "id": "109fcb98-01f9-43d0-996e-10ffb21be924",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8226fdd8-e002-410d-ae6b-7140cdae3d18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1325x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "020b18d3-f8eb-4eb4-a1e9-d532a3b9e04c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Watchlist",
+      "targets": [
+        ["linkText=Watchlist", "linkText"],
+        ["css=.watchlist > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Watchlist')]", "xpath:link"],
+        ["xpath=//li[@id='navWatchlistMenu']/p/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/list/watchlist?ref_=nv_wl_all_0')]", "xpath:href"],
+        ["xpath=//li[8]/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Watchlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aa94d9c-abdc-4429-90c7-ac84a3ac638c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tt2283336 img",
+      "targets": [
+        ["css=#tt2283336 img", "css:finder"],
+        ["xpath=//img[@alt='Men in Black: International - viewed 4 minutes ago']", "xpath:img"],
+        ["xpath=//div[@id='tt2283336']/a/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa864f33-848c-4805-b812-998c69527618",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi1150073881?playlistId=tt2283336&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d947655f-c5b5-47ca-ae4c-e7235f3c0175",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[9]/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fce3ae53-c987-4e4b-a3c1-94a218174e41",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3dad356-1d85-4985-a4f8-a818e8aec513"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
